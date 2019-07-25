@@ -2,8 +2,18 @@ package com.app;
 
 public class Employee {
 
+	private int empId;
 	private double empSal;
 	private String empName;
+	public Employee() {
+		super();
+	}
+	public int getEmpId() {
+		return empId;
+	}
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
 	public double getEmpSal() {
 		return empSal;
 	}
@@ -15,6 +25,10 @@ public class Employee {
 	}
 	public void setEmpName(String empName) {
 		this.empName = empName;
+	}
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", empSal=" + empSal + ", empName=" + empName + "]";
 	}
 	
 	
